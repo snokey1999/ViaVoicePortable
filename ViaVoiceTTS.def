@@ -1,0 +1,31 @@
+LIBRARY ViaVoiceTTS
+EXPORTS
+    VVTTS_Init            @1
+    VVTTS_InitEx          @2
+    VVTTS_Uninit          @3
+    VVTTS_IsInit          @4
+    VVTTS_Speak           @5
+    VVTTS_SpeakAsync      @6
+    VVTTS_Stop            @7
+    VVTTS_Pause           @8
+    VVTTS_IsSpeaking      @9
+    VVTTS_WaitUntilDone   @10
+    VVTTS_SetRate         @11
+    VVTTS_GetRate         @12
+    VVTTS_SetPitch        @13
+    VVTTS_GetPitch        @14
+    VVTTS_SetVolume       @15
+    VVTTS_GetVolume       @16
+    VVTTS_SetVoice        @17
+    VVTTS_SetLanguage     @18
+    VVTTS_SpeakToFile     @19
+    VVTTS_SpeakToBuffer   @20
+    VVTTS_GetVersion      @21
+    VVTTS_GetLastError    @22
+    VVTTS_GetStatus       @23
+    VVTTS_SetHeadSize     @24
+    VVTTS_GetHeadSize     @25
+    VVTTS_SetRoughness    @26
+    VVTTS_GetRoughness    @27
+    VVTTS_SetBreathiness  @28
+    VVTTS_GetBreathiness  @29

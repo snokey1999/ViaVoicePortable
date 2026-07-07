@@ -1,0 +1,31 @@
+#include <windows.h>
+#include "resource.h"
+IDD_MAINDIALOG DIALOGEX 0, 0, 320, 240
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ViaVoice TTS Portable Test GUI"
+BEGIN
+    LTEXT           "Please enter the text to speak:", IDC_STATIC, 10, 10, 200, 10
+    EDITTEXT        IDC_EDIT_TEXT, 10, 25, 300, 80, ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL | WS_BORDER
+    LTEXT           "Voice:", IDC_STATIC, 10, 115, 30, 10
+    COMBOBOX        IDC_COMBO_VOICE, 45, 113, 80, 100, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Rate:", IDC_STATIC, 140, 115, 25, 10
+    CONTROL         "", IDC_SLIDER_RATE, "msctls_trackbar32", TBS_AUTOTICKS | WS_TABSTOP, 170, 115, 100, 15
+    LTEXT           "70", IDC_LBL_RATE, 275, 115, 20, 10
+    LTEXT           "Pitch:", IDC_STATIC, 140, 135, 25, 10
+    CONTROL         "", IDC_SLIDER_PITCH, "msctls_trackbar32", TBS_AUTOTICKS | WS_TABSTOP, 170, 135, 100, 15
+    LTEXT           "50", IDC_LBL_PITCH, 275, 135, 20, 10
+    LTEXT           "Volume:", IDC_STATIC, 140, 155, 25, 10
+    CONTROL         "", IDC_SLIDER_VOLUME, "msctls_trackbar32", TBS_AUTOTICKS | WS_TABSTOP, 170, 155, 100, 15
+    LTEXT           "100", IDC_LBL_VOLUME, 275, 155, 20, 10
+    LTEXT           "Head:", IDC_STATIC, 140, 175, 25, 10
+    CONTROL         "", IDC_SLIDER_HEADSIZE, "msctls_trackbar32", TBS_AUTOTICKS | WS_TABSTOP, 170, 175, 100, 15
+    LTEXT           "50", IDC_LBL_HEADSIZE, 275, 175, 20, 10
+    LTEXT           "Rough:", IDC_STATIC, 140, 195, 25, 10
+    CONTROL         "", IDC_SLIDER_ROUGHNESS, "msctls_trackbar32", TBS_AUTOTICKS | WS_TABSTOP, 170, 195, 100, 15
+    LTEXT           "50", IDC_LBL_ROUGHNESS, 275, 195, 20, 10
+    LTEXT           "Breath:", IDC_STATIC, 140, 215, 25, 10
+    CONTROL         "", IDC_SLIDER_BREATHINESS, "msctls_trackbar32", TBS_AUTOTICKS | WS_TABSTOP, 170, 215, 100, 15
+    LTEXT           "50", IDC_LBL_BREATHINESS, 275, 215, 20, 10
+    PUSHBUTTON      "Speak", IDC_BTN_SPEAK, 10, 135, 60, 20
+    PUSHBUTTON      "Stop", IDC_BTN_STOP, 75, 135, 50, 20
+END
